@@ -13,7 +13,7 @@ import (
 	"net/http"
 	"os"
 
-	_ "github.com/maiconio/maiconio-test-2/Godeps/_workspace/src/github.com/lib/pq"
+	_ "github.com/maiconio/maiconio-test-2/deps/github.com/lib/pq"
 	//for extracting service credentials from VCAP_SERVICES
 	//"github.com/cloudfoundry-community/go-cfenv"
 )
@@ -79,7 +79,7 @@ func initAPP() {
 }
 
 func uploadHandler(w http.ResponseWriter, req *http.Request) {
-	uri := "https://a4b07974-24e1-4e04-a91e-651f3573f8b0:Y1JC5AX2ALX4@gateway.watsonplatform.net/visual-recognition-beta/api/v1/tag/recognize"
+	uri := "https://gateway.watsonplatform.net/visual-recognition-beta/api/v1/tag/recognize"
 	paramName := "img_File"
 
 	err := req.ParseForm()
