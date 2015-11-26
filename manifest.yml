@@ -1,0 +1,11 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: maiconio-test-2
+  host: maiconio-test-2
+  disk_quota: 1024M
+  services:
+  - Visual Recognition-70
+  buildpack: https://github.com/cloudfoundry/go-buildpack.git
